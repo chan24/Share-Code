@@ -14,7 +14,8 @@ int main()
     {
         cin>>a>>b;
         adj_list[a].push_back(b);
-        adj_list[b].push_back(a);
+        swap(a,b);
+        adj_list[a].push_back(b);
     }
 
     int start,end;
